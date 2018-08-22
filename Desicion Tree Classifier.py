@@ -6,7 +6,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 
 
-# CHALLENGE - create 3 more classifiers...
+#3 more classifiers...
 clf = tree.DecisionTreeClassifier()
 clf1 = KNeighborsClassifier()
 clf2 = RandomForestClassifier()
@@ -22,7 +22,7 @@ Y = ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female',
      'female', 'male', 'male']
 
 
-# CHALLENGE - ...and train them on our data
+# train them on our data
 clf = clf.fit(X, Y)
 clf1 = clf1.fit(X, Y)
 clf2 = clf2.fit(X, Y)
@@ -36,7 +36,7 @@ prediction3 = clf3.predict([[150,99,55]])
 print(accuracy_score(prediction,prediction3));
 
 
-# CHALLENGE compare their reusults and print the best one!
+
 print('DecisionTreeClassifier')
 print(prediction)
 print('KNeighborsClassifier')
